@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+        <!--  -->
+
+        <record id="t1" model="cafeteria.provider">
+          <field name="name">Khansultan</field>
+      </record>
+
+        <record id="t2" model="cafeteria.provider">
+          <field name="name">Taraz</field>
+      </record>
+
+        <record id="t3" model="cafeteria.type">
+          <field name="name">Fish</field>
+      </record>
+
+        <record id="t4" model="cafeteria.type">
+          <field name="name">Water</field>
+      </record>
+
+    <record id="t5" model="cafeteria.state">
+          <field name="name">Accessible</field>
+      </record>
+
+        <record id="t6" model="cafeteria.state">
+          <field name="name">No accessible</field>
+      </record>
+
+    <record id="t7" model="cafeteria.state">
+          <field name="name">Exhausted</field>
+      </record>
+
+        <record id="t8" model="cafeteria.state">
+          <field name="name">Time is up</field>
+      </record>
+
+        <record id="t9" model="cafeteria.product">
+          <field name="name">Tuna</field>
+          <field name="barcode">ABC-abc-1234</field>
+          <field name="description">Can of tuna</field>
+		  <field name="price">2</field>
+          <field name="quantity">1000</field>
+            <field name="expiry_date">10/05/2023</field>
+          <field name="provider_id" ref="t1"/>
+            <field name="type_id" ref="t3"/>
+            <field name="state_id" ref="t5"/>
+      </record>
+
+
+
+    </data>
+</odoo>
